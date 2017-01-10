@@ -14,11 +14,12 @@
 
     <script src="systemjs.config.js"></script>
     <script>
-      <my-app>Loading...</my-app>
+      System.import('app').catch(function(err){ console.error(err); });
     </script>
+    <!-- loagin app-->
   </head>
 
   <body>
-    <my-app>Loading AppComponent content here ...</my-app>
+    <my-app>Loading AppComponent here ...</my-app><!-- calling app-->
   </body>
 </html>
