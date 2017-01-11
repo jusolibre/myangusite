@@ -40,7 +40,7 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: '<h1>{{title}}</h1> <h2>My Heroes</h2> <ul class="heroes"> <li *ngFor="let hero of heroes" [class.selected]="hero === selectedHero" (click)="onSelect(hero)"> <span class="badge">{{hero.id}}</span> {{hero.name}} </li> </ul>     <div *ngIf="selectedHero"> <h2>{{selectedHero.name}} details!</h2> <div><label>id: </label>{{selectedHero.id}}</div> <div> <label>name: </label> <input [(ngModel)]="selectedHero.name" placeholder="name"/> </div> </div>'
+        template: "\n    <h1>{{title}}</h1>\n    <h2>My Heroes</h2>\n    <ul class=\"heroes\">\n      <li *ngFor=\"let hero of heroes\" [class.selected]=\"hero === selectedHero\" (click)=\"onSelect(hero)\">\n        <span class=\"badge\">{{hero.id}}</span> {{hero.name}}\n      </li>\n    </ul>\n    <my-hero-detail [hero]=\"selectedHero\"></my-hero-detail>\n    "
     }),
     __metadata("design:paramtypes", [])
 ], AppComponent);
